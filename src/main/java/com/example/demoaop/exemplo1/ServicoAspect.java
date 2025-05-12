@@ -1,4 +1,4 @@
-package com.example.demoaop;
+package com.example.demoaop.exemplo1;
 
 import lombok.extern.log4j.Log4j2;
 import org.aspectj.lang.JoinPoint;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ServicoAspect {
 
-    private static final String ASSINATURA_SALVAR = "execution(public com.example.demoaop.EventoRecord com.example.demoaop.EventoServico.salvar(..))";
+    private static final String ASSINATURA_SALVAR = "execution(public com.example.demoaop.exemplo1.EventoRecord com.example.demoaop.exemplo1.EventoServico.salvar(..))";
 
     @Before(ASSINATURA_SALVAR)
     public void before(JoinPoint joinPoint) {

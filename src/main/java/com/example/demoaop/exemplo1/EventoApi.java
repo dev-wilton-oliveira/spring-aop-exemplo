@@ -1,4 +1,4 @@
-package com.example.demoaop;
+package com.example.demoaop.exemplo1;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
